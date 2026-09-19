@@ -26,7 +26,8 @@
 | Shortcut 本地 Demo 导出 | PASS（仅本地） | 已收到 27,992 字节的 Apple 签名导出文件；SHA-256 `983496C5D83B3088DE8082A74C9F021F4A4011E8757206DB1C2DAE582A85D141` |
 | Shortcut Release 导出 | PENDING | 当前 Demo 归档无法在 Windows 上可靠审计内部 IP/Token，因此不提交 Git；仍需从 iPhone 导出占位符版本 |
 | 演示视频 | PENDING | 用户确认稍后录制，不影响当前功能验收结论 |
-| GitHub 交付 | NOT_DONE | 尚未初始化 Git、整理 Commit 并推送可访问仓库 |
+| GitHub 仓库创建与推送 | PASS | 私有仓库 `https://github.com/Nioo4/quietbite-agent`，`main` 已推送 |
+| 评审访问权限 | PENDING | 仓库当前为 private；正式提交前需添加评审账号或改为 public |
 
 ### V0.3.0 用户验收回执
 
@@ -51,7 +52,8 @@
 - [x] 导出本机 Demo Shortcut；出于密钥安全不提交仓库。
 - [ ] 清理调试动作并导出不含真实 Token/IP 的 `QuietBite-Release.shortcut`。
 - [ ] 录制 1–2 分钟演示视频，同时拍到用户前台操作、Windows 日志和最终 Notes。
-- [ ] 初始化 Git、按功能拆分 Commit、创建 GitHub 仓库并确认评审访问权限。
+- [x] 初始化 Git、按功能拆分 Commit，并推送 GitHub 私有仓库。
+- [ ] 正式提交前添加评审账号或把仓库改为 public，确认评审可访问。
 
 ## 用户待办事件（不阻塞开发）
 
@@ -265,5 +267,5 @@
 - 证据备注：RT-03 的响应 JSON 中 `LIVE_QUEUE_UNAVAILABLE` 字段未单独保存，但真实
   行为已确认是 `rejected`、无 Notes、无 `[DONE]`。
 
-正式交付状态：`PENDING`。仍需导出清理后的 Shortcut、录制 1–2 分钟演示视频，并完成
-Git 初始化、清晰 Commit、GitHub 仓库推送和访问权限确认。
+正式交付状态：`PENDING`。GitHub 私有仓库和提交历史已经完成；仍需导出清理后的
+Shortcut、录制 1–2 分钟演示视频，并确认评审能够访问仓库。
