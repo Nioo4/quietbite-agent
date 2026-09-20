@@ -66,16 +66,3 @@ python server.py
 5. 用 iPhone Safari 打开 `http://<Windows-IP>:8765/health`；返回 `status=ok` 后运行 Shortcut。
 
 Shortcut 动作配置见 [docs/SHORTCUT_SETUP.md](docs/SHORTCUT_SETUP.md)。
-
-## 验收与限制
-
-```powershell
-python -m unittest -v
-```
-
-当前自动化为 `37/37 CHECK_OK`；真机功能验收已由用户确认 `PASS`。完整证据与剩余交付项见
-[docs/REAL_DEVICE_ACCEPTANCE.md](docs/REAL_DEVICE_ACCEPTANCE.md)。自动化不能替代真实 iPhone、
-真实模型、真实 POI、Notes 创建和人工来源核验。
-
-V0.3.0 不提供路线、距离、预订、自动电话或实时排队；任务状态只存内存。密钥、真实
-Token、精确位置和本机 Demo `.shortcut` 不得提交仓库。
